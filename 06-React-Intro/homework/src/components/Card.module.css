@@ -1,0 +1,38 @@
+
+body {
+    background-color: black;
+}
+
+.btn {
+    color:black;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    right: 2px;
+}
+
+.btn:hover {
+    color:white;
+    background-color: rgb(167, 25, 25)
+}
+
+.Card {
+    height: 350px;
+    width:250px;
+    /* align-items: center; */
+    border-radius: 20px;
+    background-color: rgb(151, 150, 150);
+    margin-left: 5px;
+}
+
+.card:hover {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+

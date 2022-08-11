@@ -1,18 +1,19 @@
 import React from 'react';
+import s from './Card.module.css';
 
 export default function Card(props) {
   // acá va tu código
   return ( 
-  <div>
-    <button onClick = {props.onClose}>X</button>
-    <h4>{props.name}</h4>
-    <div>
-      <p>Min</p>
-      <p>{props.min}</p>
-      <p>Max</p>
-      <p>{props.max}</p>
-    </div>
+  <div className = {s.Card}>
+    <button onClick = {props.onClose} className = {s.btn}>X</button>
+    <h1 >{props.name}</h1>
+    <div >
+      <h4 >Min</h4>
+      <h6>{props.min}</h6>
+      <h4>Max</h4>
+      <h6>{props.max}</h6>
     <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt='img' />
+    </div>
   </div>
   )
 };
